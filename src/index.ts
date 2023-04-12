@@ -23,7 +23,7 @@ app.get('/', function (req: express.Request, res: express.Response):void {
 
 
 // Color Page
-app.get('/:color', function (req, res) {
+app.get('/:color', function (req: express.Request, res: express.Response):void {
     let myColor: unknown = req.params.color
     if (typeof(myColor) === 'string') {
     res.send(`
